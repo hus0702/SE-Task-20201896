@@ -1,6 +1,6 @@
 # 확장 구문 - GitHub Flavored Markdown (GFM)
 
-
+---
 
 ## **1. Table**<br>
 ### **о 1-1. 테이블을 만들 때의 유의사항**<br>
