@@ -268,15 +268,15 @@ www 오토링크는 텍스트 www. 가 ***유효한 도메인*** 과 함께 되�
 GFM은 tagfilter라는 확장 기능을 지니고 있는데, 이 기능이 몇 가지 HTML 태그를 필터렁하게 됩니다.
 이 태그들은 Markdown 콘텐츠의 맥락에 바람직하지 않아 필터링되며, 나머지 HTML 태그들은 그대로 사용될 수 있습니다.
 
-*<title>
-*<textarea>
-*<style>
-*<xmp>
-*<iframe>
-*<noembed>
-*<noframes>
-*<script>
-*<plaintext>
+* <title>
+* <textarea>
+* <style>
+* <xmp>
+* <iframe>
+* <noembed>
+* <noframes>
+* <script>
+* <plaintext>
 
 
 
