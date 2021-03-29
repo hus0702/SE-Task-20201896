@@ -1,2 +1,1 @@
-# SE-Task-20201896
-# WTF
+# 확장 구문 - GitHub Flavored Markdown (GFM)
