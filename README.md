@@ -154,6 +154,51 @@ www 오토링크는 텍스트 www. 가 ***유효한 도메인*** 과 함께 검�
 <br>
 
 유효한 도메인 이후엔 **공백이나 <를 제외한** 문자가 올 수 있습니다.
-> 더 자세한 정보를 원하신다면 www.information.org/에 방문해주세요!
+> 예시 : 더 자세한 정보를 원하신다면 www.information.org/help 로 방문해주세요!
+
+* 후행 구두점 (\?, \!, (\.), (\,), (\:), (\*), (\_), \~ ) 은 링크에 포함될 수는 있으나, 오토링크의 부분으로 인식되지는 않습니다.
+
+<br>
+<br>
+
+만약 오토링크가 \)로 끝난다면, GFM은 오토링크에 있는 괄호의 수를 검사합니다. 만약, '(' 보다 ')'가 더 많다면 그 )들은 일반 텍스트 처리가 됩니다.
+
+> 예시 코드 : 
+> 
+>      www.google.com/search?q=Markup+(business)
+>    
+>      www.google.com/search?q=Markup+(business)))
+>    
+>      (www.google.com/search?q=Markup+(business))
+>     
+>      (www.google.com/search?q=Markup+(business)
+>    
+> 렌더링된 출력 : 
+> 
+> www.google.com/search?q=Markup+(business)
+> 
+> www.google.com/search?q=Markup+(business)))
+> 
+> (www.google.com/search?q=Markup+(business))
+> 
+> (www.google.com/search?q=Markup+(business)
+> 
+
+* 단, 이 규칙은 링크가 오직 ')'로 끝나는 경우에만 실행됩니다. 그렇지 않은 경우, 특별한 규칙이 적용되지 않습니다.
+
+> 예시 코드 :
+> 
+>       www.google.com/search?q=(business))
+>       
+>       www.google.com/search?q=(business))^w^
+>       
+> 렌더링된 출력 :
+> 
+> www.google.com/search?q=(business))
+>       
+> www.google.com/search?q=(business))^w^
+
+
+
 
 
